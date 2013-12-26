@@ -7,12 +7,12 @@
 
 Summary:	K Desktop Environment - file sharing plugins
 Name:		kde4-kdenetwork-filesharing
-Version:	4.11.4
+Version:	4.12.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	de907b618cc0ccc714e5fd0c46bbd8a0
+# Source0-md5:	b6904d3c925e27e0e3938b1cbae3157b
 URL:		http://www.kde.org/
 BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtOpenGL-devel >= %{qtver}
@@ -30,7 +30,7 @@ BuildRequires:	gmp-devel
 BuildRequires:	gpgme-devel
 BuildRequires:	jasper-devel
 BuildRequires:	kde4-kdebase-devel >= %{version}
-BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
+BuildRequires:	kde4-kdebase-workspace-devel >= 4.11.4
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	kde4-kdepimlibs-devel >= %{version}
 BuildRequires:	libgadu-devel >= 1.8.0
@@ -38,17 +38,10 @@ BuildRequires:	libidn-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libktorrent-devel >= 1.0.2
 BuildRequires:	libmms-devel
-BuildRequires:	libmsn-devel >= 4.1
-BuildRequires:	libotr-devel >= 4.0.0
-BuildRequires:	libv4l-devel >= 0.5.8
-BuildRequires:	libvncserver-devel
 BuildRequires:	libxml2-progs
 BuildRequires:	libxslt-devel >= 1.0.7
 BuildRequires:	meanwhile-devel >= 1.0.1
-BuildRequires:	mediastreamer-devel >= 2.3.0
-BuildRequires:	msilbc-devel >= 2.0.1
 BuildRequires:	openssl-devel >= 0.9.7d
-BuildRequires:	ortp-devel >= 0.16.1-3
 BuildRequires:	pcre-devel
 BuildRequires:	pkgconfig
 BuildRequires:	qca-devel >= 2.0
@@ -62,8 +55,6 @@ BuildRequires:	soprano-devel >= 2.4.64
 BuildRequires:	speex-devel
 BuildRequires:	sqlite3-devel
 BuildRequires:	strigi-devel >= 0.7.2
-BuildRequires:	telepathy-qt4-devel >= 0.9.0
-BuildRequires:	xmms-devel
 Obsoletes:	kdenetwork4
 Conflicts:	kdenetwork4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -97,4 +88,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/kde4/sambausershareplugin.so
 %{_datadir}/kde4/services/sambausershareplugin.desktop
-
