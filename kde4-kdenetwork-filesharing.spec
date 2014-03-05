@@ -7,12 +7,12 @@
 
 Summary:	K Desktop Environment - file sharing plugins
 Name:		kde4-kdenetwork-filesharing
-Version:	4.12.2
+Version:	4.12.3
 Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	96b4ace67f0c13316d2643ac1bd9b9bf
+# Source0-md5:	b73faadd22d5205af87d7bf05a20b32e
 URL:		http://www.kde.org/
 BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtOpenGL-devel >= %{qtver}
