@@ -8,7 +8,7 @@
 Summary:	K Desktop Environment - file sharing plugins
 Name:		kde4-kdenetwork-filesharing
 Version:	4.14.3
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
